@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Registration for the Dance Camp</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Registration for the Dance Camp</h1>
+      <p id="description">
+  Dance with us and let the moment take you away.</p>
+    </header>
+    <form id="survey-form">
+      <fieldset>
+        <div class="input-area">
+          <label for="name" id="name-label">
+            Name
+          </label>
+          <input id="name" name="name" type="text" value="Sveta" placeholder="Enter your name" required>
+        </div>
+        <div class="input-area">
+          <label for="surname"> Surname </label>
+          <input id="surname" name="surname" placeholder="Enter your surname" tape="text">
+        </div>
+        <div class="input-area">
+            <label for="number" id="number-label"> Age</label>
+            <input id="number" type="number" min="14" max="50" placeholder="Enter your age" >
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="input-area">
+          <label for="email" id="email-label">Email </label>
+          <input id="email" type="email" value="skonyaeva@list.ru" placeholder="Enter your email"  required>
+        </div>
+        <div class="input-area">
+          <label for="phone">Phone</label>
+          <input id="phone" type="phone" min="14">
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="input-area">
+          <label for="dropsown">Dance style</label>
+          <select id="dropdown" required>
+            <option value="1">Contemporary</option>
+            <option value="2">Hip-hop</option>
+            <option value="3">Jazz-funk</option>
+            <option value="4">Strip</option>
+          </select>
+        </div>
+      </fieldset>
+      <fieldset>        
+        <div class="input-area">
+          <div>How did you know about us</div>
+          <div class="flex">
+            <label for="vk"><input id="vk" name="vk" type="checkbox"  value="vk"> VK</label>
+            <label for="fr"> <input id="fr" name="fr" type="checkbox" value="fr"> Friends</label>
+            <label for="other"><input id="other" name="other" type="checkbox" value="other"> Other</label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>        
+        <div class="input-area">
+          <div>Dancing experience</div>
+          <div class="flex">
+           <label for="yes"><input id="yes" type="radio"  value="yes" name="experience" checked>Yes</label>
+            <label for="no"> <input id="no" type="radio" value="no" name="experience">No</label>
+            </div>
+        </div>
+      </fieldset>
+      <fieldset>        
+        <div class="input-area">
+          <label for="info">What's the love of dancing?</label>
+          <textarea id="" cols="30" rows="3"></textarea>
+        </div>
+      </fieldset>      
+      <input type="submit" value="Submit" id="submit">
+    </form>
+  </body>
+</html>

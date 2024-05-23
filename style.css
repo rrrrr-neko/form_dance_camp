@@ -1,0 +1,74 @@
+body {
+  background-color: #373a38;  
+  color: #e5e2e0;
+  font-family: Montserrat;
+  width: 70vh;
+  min-width: 300px;
+  margin: 2em auto;
+}
+
+h1, p {
+  text-align: center;
+}
+
+form{
+  border: 2px solid #fb5e3d;
+  padding: 0 1em 1em 1em;
+  
+}
+
+fieldset{
+  border: 0;
+  border-bottom: 1px solid #fb5e3d; 
+  margin: 1em 0;
+}
+
+input, select, textarea{
+  width: 100%;
+  margin-top: 0.5em;
+  padding: 0.5em;
+  border: none;
+}
+
+input, select{  
+  height: 2rem;
+}
+
+/*Доразобраться как стилизовать*/
+input:focus {
+  border-radius: none;
+  border:1px solid #fb5e3d; 
+}
+
+input[type="checkbox"], input[type="radio"]{
+  display: inline-block;
+  height: 1rem;
+  width: auto;
+  border: 0px;
+}
+
+input[type="submit"]{   
+  display: block;
+  width: 50%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+}
+
+input[type="submit"]:hover{
+   background-color: #6d230b;  
+   color: #e5e2e0;
+   transition: color 5ms linear, background-color 5ms linear;
+}
+
+
+.input-area{
+  margin: 0 0 0.5rem 0;
+}
+
+.flex{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+}
